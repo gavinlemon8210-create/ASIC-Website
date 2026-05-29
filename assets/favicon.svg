@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110">
+  <rect width="100" height="100" rx="14" fill="#0C1A34"/>
+  <text x="50" y="67" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="white" text-anchor="middle">ASIC</text>
+  <rect x="4" y="102" width="92" height="6" rx="3" fill="#C39A29"/>
+</svg>
