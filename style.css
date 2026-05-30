@@ -454,7 +454,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   inset: 0;
   background-image: url("assets/hero.jpg");
   background-size: cover;
-  background-position: center 35%;
+  background-position: center 40%;
   opacity: 0;
   animation: heroBgReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   will-change: opacity, transform;
@@ -636,10 +636,12 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   transition: padding-left var(--dur-base) var(--ease-out), opacity 0.45s var(--ease-out), transform 0.45s var(--ease-out);
   cursor: default;
 }
-.what-item:hover { padding-left: 8px; }
-.what-item:hover .what-arrow {
-  color: var(--asic-gold);
-  transform: translateX(4px);
+@media (hover: hover) {
+  .what-item:hover { padding-left: 8px; }
+  .what-item:hover .what-arrow {
+    color: var(--asic-gold);
+    transform: translateX(4px);
+  }
 }
 .what-n {
   font-size: 13px;
@@ -1856,6 +1858,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   .nav-hamburger[aria-expanded="true"] span { background: #fff; }
 
   .hero { padding: 72px 0 60px; }
+  .hero-bg { background-position: center 55%; }
   .display { font-size: clamp(40px, 10vw, 72px); }
   .section { padding: 80px 0; }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
