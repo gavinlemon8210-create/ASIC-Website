@@ -454,7 +454,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   inset: 0;
   background-image: url("assets/hero.jpg");
   background-size: cover;
-  background-position: center 40%;
+  background-position: center 55%;
   opacity: 0;
   animation: heroBgReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   will-change: opacity, transform;
@@ -1858,7 +1858,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   .nav-hamburger[aria-expanded="true"] span { background: #fff; }
 
   .hero { padding: 72px 0 60px; }
-  .hero-bg { background-position: center 55%; }
+  .hero-bg { background-position: center 68%; }
   .display { font-size: clamp(40px, 10vw, 72px); }
   .section { padding: 80px 0; }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
