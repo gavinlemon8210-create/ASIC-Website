@@ -112,37 +112,43 @@
             </p>
           </div>
 
-          <form class="form-grid" id="contact-form" novalidate>
+          <div data-fs-error style="display:none; color:#c0392b; font-size:14px; margin-bottom:16px;"></div>
+
+          <form class="form-grid" id="contact-form">
+            <input type="hidden" name="_subject" value="New message from azsic.org" />
             <div class="field">
               <label for="f-name">Full name</label>
-              <input id="f-name" type="text" placeholder="Your name" required />
+              <input id="f-name" name="full-name" type="text" placeholder="Your name" required data-fs-field />
+              <span data-fs-error="full-name" style="font-size:13px; color:#c0392b;"></span>
             </div>
             <div class="field">
               <label for="f-email">Email</label>
-              <input id="f-email" type="email" placeholder="you@school.edu" required />
+              <input id="f-email" name="email" type="email" placeholder="you@school.edu" required data-fs-field />
+              <span data-fs-error="email" style="font-size:13px; color:#c0392b;"></span>
             </div>
             <div class="field field--full">
               <label for="f-subject">I'm reaching out about</label>
-              <select id="f-subject">
-                <option value="apply">Applying to join</option>
-                <option value="sponsor">Sponsorship / partnership</option>
-                <option value="mentor">Mentorship or speaking</option>
-                <option value="press">Press inquiry</option>
-                <option value="other">Other</option>
+              <select id="f-subject" name="subject" data-fs-field>
+                <option value="Applying to join">Applying to join</option>
+                <option value="Sponsorship / partnership">Sponsorship / partnership</option>
+                <option value="Mentorship or speaking">Mentorship or speaking</option>
+                <option value="Press inquiry">Press inquiry</option>
+                <option value="Other">Other</option>
               </select>
             </div>
             <div class="field field--full">
               <label for="f-message">Message</label>
-              <textarea id="f-message" rows="5" placeholder=""></textarea>
+              <textarea id="f-message" name="message" rows="5" placeholder="" data-fs-field></textarea>
+              <span data-fs-error="message" style="font-size:13px; color:#c0392b;"></span>
             </div>
             <div class="form-actions field--full">
-              <button type="submit" class="btn btn-primary">
+              <button type="submit" class="btn btn-primary" data-fs-submit-btn>
                 Send message <span class="arr">→</span>
               </button>
             </div>
           </form>
 
-          <div class="form-sent" id="contact-sent" style="display:none;">
+          <div class="form-sent" id="contact-sent" data-fs-success style="display:none;">
             <div class="eyebrow gold"><span class="tick"></span>Received</div>
             <h2 class="form-sent-title">Thanks — we'll be in touch shortly.</h2>
             <p class="body-copy" style="font-size: 15px; color: var(--fg-muted);">
@@ -189,5 +195,10 @@
 
 
   <script src="site.js"></script>
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form', formId: 'xaqkgnjo' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>

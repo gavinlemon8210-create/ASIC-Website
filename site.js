@@ -57,17 +57,6 @@
       }
     });
 
-    /* --- Contact form submit --- */
-    var form = document.getElementById("contact-form");
-    var sent = document.getElementById("contact-sent");
-    if (form && sent) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        form.style.display = "none";
-        sent.style.display = "flex";
-      });
-    }
-
     /* --- Registration form submit --- */
     var regForm = document.getElementById("register-form");
     var regSent = document.getElementById("register-sent");
