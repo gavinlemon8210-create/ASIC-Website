@@ -1844,15 +1844,16 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   }
   .footer-right { text-align: left; }
 
-  /* Wildcat Tank section — landscape photos were cropped to a sliver at 640px
-     min-height. Match the ~16:9 ratio so the full scene is visible. */
+  /* Wildcat Tank section — let content height drive the section so nothing
+     gets cut off, while keeping generous padding so it feels full and the
+     landscape photos have room to show. The bg image covers whatever height. */
   .shark-tank-section {
     min-height: 0;
-    aspect-ratio: 16 / 9;
-    padding: var(--sp-6) 0;
-    align-items: flex-end;
+    height: auto;
+    padding: 72px 0 64px;
+    align-items: center;
   }
-  .shark-overlay { background: rgba(0, 0, 0, 0.58); }
+  .shark-overlay { background: rgba(0, 0, 0, 0.62); }
 
   /* Team bio modal — stack the photo OVER the bio on mobile so the biography
      is actually visible. (Default row layout gave the photo a fixed 300px and
