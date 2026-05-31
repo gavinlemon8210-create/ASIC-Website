@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 120">
+  <!-- Mark -->
+  <text x="0" y="86" font-family="Georgia, 'Times New Roman', serif" font-size="80" fill="#0C1A34" letter-spacing="2">AZSIC</text>
+  <!-- Gold rule -->
+  <rect x="2" y="104" width="282" height="6" rx="3" fill="#C39A29"/>
+  <!-- Vertical divider -->
+  <rect x="316" y="14" width="1.5" height="92" fill="#D2D6E0"/>
+  <!-- Sub text -->
+  <text x="336" y="58" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#4A5468" letter-spacing="2.5" text-transform="uppercase">ARIZONA STUDENT</text>
+  <text x="336" y="84" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#4A5468" letter-spacing="2.5">INVESTMENT COUNCIL</text>
+</svg>
