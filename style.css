@@ -1,5 +1,5 @@
 /* =============================================================
-   ASIC — Arizona Student Investment Council
+   AZSIC — Arizona Student Investment Council
    style.css — tokens + all components, all pages
    ============================================================= */
 
@@ -1126,7 +1126,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
 .bio-read-more:hover { color: var(--asic-gold-hover); }
 .bio-read-more .arr { transition: transform 0.3s ease; display: inline-block; }
 .bio-read-more.is-expanded .arr { transform: rotate(90deg); }
-/* Contributor ASIC impact callout */
+/* Contributor AZSIC impact callout */
 .contributor-impact {
   margin-top: 20px;
   padding: 20px 24px;
