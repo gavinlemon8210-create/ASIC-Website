@@ -1832,7 +1832,16 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   .contact-page-grid { grid-template-columns: 1fr; gap: 64px; }
   .what-head { grid-template-columns: 1fr; }
   .footer-bar { grid-template-columns: 1fr; text-align: left; gap: 16px; }
-  .footer-center { text-align: left; }
+  /* Let the location line wrap (it was nowrap and overflowed the screen);
+     compact it so it reads as a tidy label. The &nbsp; around the dots keeps
+     them from orphaning at a line start. */
+  .footer-center {
+    text-align: left;
+    white-space: normal;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    line-height: 1.7;
+  }
   .footer-right { text-align: left; }
 }
 
