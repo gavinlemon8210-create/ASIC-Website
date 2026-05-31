@@ -633,6 +633,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
 }
 .what-list { border-top: 1px solid var(--border-default); }
 .what-item {
+  position: relative;
   display: grid;
   grid-template-columns: 88px 1fr 28px;
   gap: 32px;
@@ -1909,7 +1910,15 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .stats-grid .stat:last-child { grid-column: span 2; }
   .what-item { grid-template-columns: 60px 1fr; }
-  .what-item .what-arrow { display: none; }
+  /* The visible arrow is dropped on mobile, but keep the link working by
+     stretching it (invisibly) over the whole card so a tap anywhere on the
+     box navigates to the matching About section. */
+  .what-item .what-arrow {
+    position: absolute;
+    inset: 0;
+    font-size: 0;
+    z-index: 2;
+  }
   .comp-row { grid-template-columns: 1fr 1fr; }
   .comp-row > :last-child { display: none; }
   .pull-quote-section { padding: 8px 0 48px; }
