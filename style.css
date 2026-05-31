@@ -1851,9 +1851,9 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   .member-modal { flex-direction: column; max-height: 90vh; }
   .member-modal-photo-wrap {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 3;
     height: auto;
-    max-height: 60vh;
+    max-height: 40vh;
     border-radius: 6px 6px 0 0;
   }
   /* Show the whole portrait (face centered), not just the hair at the top */

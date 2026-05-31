@@ -183,6 +183,8 @@
       overlay.setAttribute("aria-hidden", "false");
       overlay.classList.add("is-open");
       document.body.style.overflow = "hidden";
+      var modalBody = overlay.querySelector(".member-modal-body");
+      if (modalBody) modalBody.scrollTop = 0;
     }
 
     function closeModal() {
