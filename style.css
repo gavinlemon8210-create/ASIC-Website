@@ -1826,6 +1826,13 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
     grid-template-columns: 1fr;
     gap: 48px;
   }
+  /* When split-media holds a card list (not a photo), release the fixed
+     aspect-ratio and clipping so all cards are fully visible. */
+  .split-media:has(.st-format-grid) {
+    aspect-ratio: unset;
+    overflow: visible;
+    height: auto;
+  }
   .about-who-left { position: static; }
   .comp-head { grid-template-columns: 1fr; }
   .comp-detail-card { grid-template-columns: 1fr; gap: 28px; }
