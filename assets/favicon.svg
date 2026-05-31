@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <rect width="100" height="100" rx="14" fill="#0C1A34"/>
-  <text x="50" y="65" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="white" text-anchor="middle" letter-spacing="1">AZSIC</text>
-  <rect x="4" y="102" width="92" height="6" rx="3" fill="#C39A29"/>
+  <text x="50" y="68" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="white" text-anchor="middle" letter-spacing="-1">AZ</text>
+  <rect x="8" y="84" width="84" height="8" rx="4" fill="#C39A29"/>
 </svg>
