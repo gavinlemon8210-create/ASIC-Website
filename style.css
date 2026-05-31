@@ -385,25 +385,25 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
 .nav-hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
-  padding: 8px;
+  gap: 6px;
+  padding: 10px;
   cursor: pointer;
 }
 .nav-hamburger span {
   display: block;
-  width: 22px;
-  height: 1.5px;
+  width: 30px;
+  height: 2px;
   background: var(--asic-navy);
   transition: transform var(--dur-base) var(--ease-out), opacity var(--dur-base);
 }
 .nav-hamburger[aria-expanded="true"] span:nth-child(1) {
-  transform: translateY(6.5px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 .nav-hamburger[aria-expanded="true"] span:nth-child(2) {
   opacity: 0;
 }
 .nav-hamburger[aria-expanded="true"] span:nth-child(3) {
-  transform: translateY(-6.5px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* === 8. HERO === */
