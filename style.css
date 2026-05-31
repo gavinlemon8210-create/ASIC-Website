@@ -1867,7 +1867,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   /* Mobile hero: full-bleed photo background (Gavin + students), like desktop.
      Text overlays the lower half over a gradient scrim for readability. */
   .hero--photo {
-    min-height: 112vw;
+    min-height: 128vw;
     display: flex;
     align-items: flex-end;
     padding: 80px 0 30px;
@@ -1877,7 +1877,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
   .hero-bg {
     background-image: url("assets/hero-mobile.jpg");
     background-size: cover;
-    background-position: 16% center;
+    background-position: 2% center;
     filter: none;
     transform: none;
     animation-name: heroBgRevealMobile;
