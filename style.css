@@ -1087,6 +1087,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-regular); }
 }
 .contributor-bio { margin: 0 0 12px; }
 .contributor-bio:last-of-type { margin-bottom: 0; }
+.bio-disclosure { font-size: 0.78em; color: var(--fg-muted); opacity: 0.8; margin-top: 16px; }
 
 /* Bio clamp + read more */
 .bio-body {
