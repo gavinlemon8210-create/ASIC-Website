@@ -76,7 +76,7 @@
         sharkSlides[sharkCurrent].classList.remove("active");
         sharkCurrent = (sharkCurrent + 1) % sharkSlides.length;
         sharkSlides[sharkCurrent].classList.add("active");
-      }, 2000);
+      }, 5500);
     }
 
     /* --- Bio read more --- */
